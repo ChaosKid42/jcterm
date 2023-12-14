@@ -78,6 +78,13 @@ public class JSchSession{
   private static synchronized JSch getJSch(){
     if(jsch==null){
       jsch=new JSch();
+        String privateKey = ".ssh/id_rsa";
+        try{
+            jsch.addIdentity(privateKey);
+        }
+        catch(JSchException e){
+            e.printStackTrace();
+        }
     }
     return jsch;
   }
