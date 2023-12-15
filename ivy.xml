@@ -10,7 +10,7 @@
         <conf name="runtime-test"/>
     </configurations>
     <dependencies>
-        <dependency org="com.jcraft" name="jsch" rev="0.1.51" conf="compile->master,optional" />
+        <dependency org="com.jcraft" name="jsch" rev="0.1.55" conf="compile->master,optional" />
         <dependency org="net.java.linoleum" name="application" rev="1.0" conf="compile->master" />
     </dependencies>
 </ivy-module>
