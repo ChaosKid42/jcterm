@@ -1,12 +1,5 @@
-
-Prerequisites:
-
-  sudo apt-get install ant ant-contrib ivy
-  mkdir -p ~/.ant/lib
-  ln -s /usr/share/java/ant-contrib.jar ~/.ant/lib/
-  ln -s /usr/share/java/ivy.jar ~/.ant/lib/
-
-
 To build jcterm:
-  ant jar
+  ./gradlew shadowJar
 
+To run jcterm:
+  java -jar build/libs/jcterm-all.jar
